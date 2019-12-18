@@ -1,0 +1,154 @@
+{
+    "name": "rinvex/cortex",
+    "description": "Rinvex Cortex is a solid foundation for enterprise solutions, that provides a flexible and extensible architecture for building multi-lingual, multi-tenant applications with content management, themeable views, application modules and much more.",
+    "keywords": [
+        "rinvex",
+        "cortex",
+        "flexible",
+        "framework",
+        "laravel",
+        "themes",
+        "solution",
+        "extension",
+        "enterprise",
+        "application",
+        "multi-lingual",
+        "multi-tenant",
+        "bootstrap",
+        "module"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/cortex/issues",
+        "source": "https://github.com/rinvex/cortex",
+        "docs": "https://github.com/rinvex/cortex/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/cortex/contributors"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rinvex/l60-laravel-tinker-server"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rinvex/l60-notification"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rinvex/l60-laroute"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rinvex/l60-mcamara-localization"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "ext-pdo": "*",
+        "appstract/laravel-opcache": "^3.0.0",
+        "aws/aws-sdk-php": "^3.112.0",
+        "aws/aws-sdk-php-laravel": "^3.4.0",
+        "beyondcode/laravel-self-diagnosis": "^1.3.0",
+        "cortex/auth": "^4.0.0",
+        "cortex/categories": "^3.0.0",
+        "cortex/foundation": "^3.0.0",
+        "cortex/pages": "^3.0.0",
+        "cortex/tags": "^3.0.0",
+        "cortex/tenants": "^3.0.0",
+        "doctrine/dbal": "^2.9.0",
+        "guzzlehttp/guzzle": "^6.3.0",
+        "laravel/envoy": "^1.6.0",
+        "laravel/framework": "^6.5.0",
+        "laravel/helpers": "^1.1.0",
+        "laravel/tinker": "^1.0.0",
+        "league/flysystem-aws-s3-v3": "^1.0.0",
+        "lord/laroute": "^2.4.0",
+        "mariuzzo/laravel-js-localization": "^1.5.0",
+        "nunomaduro/laravel-console-menu": "^2.2.0",
+        "nunomaduro/laravel-console-task": "^1.3.0",
+        "predis/predis": "^1.1.0",
+        "spatie/laravel-collection-macros": "^6.0.0",
+        "spatie/laravel-db-snapshots": "^1.3.0",
+        "spatie/laravel-medialibrary": "^7.12.0"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2.0",
+        "barryvdh/laravel-ide-helper": "^2.6.0",
+        "beyondcode/laravel-dump-server": "^1.3.0",
+        "beyondcode/laravel-query-detector": "^1.1.0",
+        "beyondcode/laravel-tinker-server": "^1.0.0",
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "facade/ignition": "^1.4",
+        "fzaninotto/faker": "~1.8.0",
+        "itsgoingd/clockwork": "^4.0.0",
+        "mockery/mockery": "^1.2.0",
+        "nunomaduro/collision": "^3.0.0",
+        "nunomaduro/larastan": "^0.4.0",
+        "nunomaduro/laravel-console-dusk": "^1.4.0",
+        "nunomaduro/laravel-desktop-notifier": "^2.2.0",
+        "nunomaduro/phpinsights": "^1.9.0",
+        "phpunit/phpunit": "^8.3.0",
+        "roave/security-advisories": "dev-master",
+        "symfony/thanks": "^1.1.0",
+        "wnx/laravel-stats": "^2.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan ide-helper:generate --ansi",
+            "@php artisan ide-helper:meta --ansi"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "lord/laroute",
+                "silber/bouncer",
+                "mariuzzo/laravel-js-localization"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
