@@ -1,0 +1,74 @@
+{
+    "name": "rinvex/laravel-cacheable",
+    "description": "Rinvex Cacheable is a granular, intuitive, and fluent caching system for eloquent models. Simple, but yet powerful, plug-n-play with no hassle.",
+    "type": "library",
+    "keywords": [
+        "trait",
+        "model",
+        "laravel",
+        "eloquent",
+        "intuitive",
+        "cacheable",
+        "granular",
+        "rinvex",
+        "fluent",
+        "query",
+        "cache"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/laravel-cacheable/issues",
+        "source": "https://github.com/rinvex/laravel-cacheable",
+        "docs": "https://github.com/rinvex/laravel-cacheable/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/laravel-cacheable/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "illuminate/cache": "^6.0.0",
+        "illuminate/contracts": "^6.0.0",
+        "illuminate/database": "^6.0.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "illuminate/container": "^6.0.0",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rinvex\\Cacheable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Cacheable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

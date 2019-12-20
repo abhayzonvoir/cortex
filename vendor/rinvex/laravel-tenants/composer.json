@@ -1,0 +1,93 @@
+{
+    "name": "rinvex/laravel-tenants",
+    "description": "Rinvex Tenants is a contextually intelligent polymorphic Laravel package, for single db multi-tenancy. You can completely isolate tenants data with ease using the same database, with full power and control over what data to be centrally shared, and what to be tenant related and therefore isolated from others.",
+    "type": "library",
+    "keywords": [
+        "model",
+        "tenant",
+        "laravel",
+        "eloquent",
+        "tenantable",
+        "translatable",
+        "polymorphic",
+        "sluggable",
+        "tenancy",
+        "rinvex",
+        "multi"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/laravel-tenants/issues",
+        "source": "https://github.com/rinvex/laravel-tenants",
+        "docs": "https://github.com/rinvex/laravel-tenants/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/laravel-tenants/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "illuminate/console": "^6.0.0",
+        "illuminate/database": "^6.0.0",
+        "illuminate/support": "^6.0.0",
+        "laravel/helpers": "^1.1.0",
+        "propaganistas/laravel-phone": "^4.2.0",
+        "rinvex/countries": "^6.0.0",
+        "rinvex/laravel-cacheable": "^3.0.0",
+        "rinvex/languages": "^4.0.0",
+        "rinvex/laravel-support": "^3.0.0",
+        "spatie/laravel-sluggable": "^2.2.0",
+        "spatie/laravel-translatable": "^4.2.0",
+        "watson/validating": "^3.3.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "illuminate/container": "^6.0.0",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Rinvex\\Tenants\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Tenants\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rinvex\\Tenants\\Providers\\TenantsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

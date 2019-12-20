@@ -1,0 +1,92 @@
+{
+    "name": "rinvex/laravel-tags",
+    "description": "Rinvex Tags is a polymorphic Laravel package, for tag management. You can tag any eloquent model with ease, and utilize the awesomeness of Sluggable, and Translatable models out of the box.",
+    "type": "library",
+    "keywords": [
+        "tag",
+        "model",
+        "laravel",
+        "taggable",
+        "taxonomy",
+        "eloquent",
+        "laravel",
+        "translatable",
+        "polymorphic",
+        "sluggable",
+        "sortable",
+        "rinvex"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/laravel-tags/issues",
+        "source": "https://github.com/rinvex/laravel-tags",
+        "docs": "https://github.com/rinvex/laravel-tags/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/laravel-tags/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "illuminate/console": "^6.0.0",
+        "illuminate/database": "^6.0.0",
+        "illuminate/support": "^6.0.0",
+        "laravel/helpers": "^1.1.0",
+        "rinvex/laravel-cacheable": "^3.0.0",
+        "rinvex/laravel-support": "^3.0.0",
+        "spatie/eloquent-sortable": "^3.7.0",
+        "spatie/laravel-sluggable": "^2.2.0",
+        "spatie/laravel-translatable": "^4.2.0",
+        "watson/validating": "^3.3.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "illuminate/container": "^6.0.0",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Rinvex\\Tags\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Tags\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rinvex\\Tags\\Providers\\TagsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

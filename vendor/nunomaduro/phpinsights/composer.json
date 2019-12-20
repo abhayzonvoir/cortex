@@ -1,0 +1,101 @@
+{
+    "name": "nunomaduro/phpinsights",
+    "description": "Instant PHP quality checks from your console.",
+    "keywords": ["php", "insights", "console", "quality", "source", "code"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuno Maduro",
+            "email": "enunomaduro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-tokenizer": "*",
+        "composer/composer": "^1.7",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "league/container": "^3.2",
+        "object-calisthenics/phpcs-calisthenics-rules": "^3.5",
+        "phploc/phploc": "^5.0",
+        "psr/container": "^1.0",
+        "sensiolabs/security-checker": "^6.0",
+        "slevomat/coding-standard": "^5.0",
+        "squizlabs/php_codesniffer": "^3.4",
+        "symfony/console": "^4.2|^5.0",
+        "symfony/finder": "^4.2|^5.0"
+    },
+    "require-dev": {
+        "illuminate/console": "^5.8",
+        "illuminate/support": "^5.8",
+        "localheinz/phpstan-rules": "^0.10.0",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan-strict-rules": "^0.11",
+        "phpunit/phpunit": "^8.0",
+        "roave/no-floaters": "^1.1",
+        "symfony/var-dumper": "^4.2|^5.0",
+        "symplify/easy-coding-standard": "^6.0",
+        "thecodingmachine/phpstan-strict-rules": "^0.11.0"
+    },
+    "suggest": {
+        "ext-simplexml": "It is needed for the checkstyle formatter"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "NunoMaduro\\PhpInsights\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NunoMaduro\\PhpInsights\\Application\\Adapters\\Laravel\\InsightsServiceProvider"
+            ]
+        }
+    },
+    "bin": [
+        "bin/phpinsights"
+    ],
+    "scripts": {
+        "website:copy-changelog": "@php -r \"copy('CHANGELOG.md', 'docs/changelog.md');\"",
+        "website:copy-logo": "@php -r \"(is_dir('docs/.vuepress/public') || mkdir('docs/.vuepress/public')) && copy('art/logo_mixed.gif', 'docs/.vuepress/public/logo.gif') && copy('art/heart.svg', 'docs/.vuepress/public/heart.svg') && copy('art/heart.png', 'docs/.vuepress/public/heart.png');\"",
+        "ecs:test": "ecs check src --ansi --config vendor/symplify/easy-coding-standard/config/set/clean-code.yaml",
+        "phpstan:test": "phpstan analyse --ansi",
+        "phpunit:test": "phpunit --colors=always",
+        "insights": "bin/phpinsights analyse --ansi -v --no-interaction --min-quality=90.0 --min-architecture=80.0 --min-style=97.8",
+        "test": [
+            "@phpstan:test",
+            "@ecs:test",
+            "@phpunit:test",
+            "@insights"
+        ],
+        "post-install-cmd": [
+            "@website:copy-changelog",
+            "@website:copy-logo"
+        ],
+        "post-update-cmd": [
+            "@website:copy-changelog",
+            "@website:copy-logo"
+        ]
+    },
+    "scripts-descriptions": {
+        "website:copy-changelog": "Copy package changelog to the website",
+        "website:copy-logo": "Copy logo from art directory to the website",
+        "ecs:test": "Run the ecs tests.",
+        "phpstan:test": "Run the phpstan tests.",
+        "phpunit:test": "Run the phpunit tests.",
+        "insights": "Run the phpinsights tests",
+        "test": "Run all tests including phpstan, phpunit and ecs."
+    }
+}

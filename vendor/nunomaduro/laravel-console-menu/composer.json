@@ -1,0 +1,38 @@
+{
+    "name": "nunomaduro/laravel-console-menu",
+    "description": "Laravel Console Menu is an output method for your Laravel/Laravel Zero commands.",
+    "keywords": ["console", "command-line", "php", "cli", "laravel-zero", "laravel", "artisan", "symfony"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/nunomaduro/laravel-console-menu/issues",
+        "source": "https://github.com/nunomaduro/laravel-console-menu"
+    },
+    "authors": [
+        {
+            "name": "Nuno Maduro",
+            "email": "enunomaduro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/console": "5.6.*|5.7.*|5.8.*|^6.0",
+        "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0",
+        "php-school/cli-menu": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NunoMaduro\\LaravelConsoleMenu\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NunoMaduro\\LaravelConsoleMenu\\LaravelConsoleMenuServiceProvider"
+            ]
+        }
+    }
+}

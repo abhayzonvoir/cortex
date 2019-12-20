@@ -1,0 +1,76 @@
+{
+    "name": "rinvex/authy",
+    "description": "Rinvex Authy is a simple wrapper for Authy TOTP API, the best rated Two-Factor Authentication service for consumers, simplest 2fa Rest API for developers and a strong authentication platform for the enterprise.",
+    "type": "library",
+    "keywords": [
+        "sms",
+        "call",
+        "authy",
+        "message",
+        "security",
+        "twofactor",
+        "verification",
+        "authentication",
+        "automated",
+        "register",
+        "rinvex",
+        "phone",
+        "token"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/authy/issues",
+        "source": "https://github.com/rinvex/authy",
+        "docs": "https://github.com/rinvex/authy/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/authy/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "guzzlehttp/guzzle": "^6.0.0",
+        "psr/http-message": "^1.0.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "laravel/helpers": "^1.1.0",
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rinvex\\Authy\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Authy\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

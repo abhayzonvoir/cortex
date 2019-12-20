@@ -1,0 +1,79 @@
+{
+    "name": "rinvex/languages",
+    "description": "Rinvex Languages is a simple and lightweight package for retrieving language details with flexibility. A whole bunch of data including name, native, iso codes, language family, language script, language cultures, and other attributes for the 180+ known languages worldwide at your fingertips.",
+    "type": "library",
+    "keywords": [
+        "rinvex",
+        "scripts",
+        "language",
+        "lightweight",
+        "localization",
+        "flexible",
+        "locale",
+        "family",
+        "simple"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/languages/issues",
+        "source": "https://github.com/rinvex/languages",
+        "docs": "https://github.com/rinvex/languages/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous PHP Community",
+            "homepage": "https://github.com/rinvex/languages/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "laravel/helpers": "^1.1.0",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Rinvex\\Language\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Language\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rinvex\\Language\\Providers\\LanguageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

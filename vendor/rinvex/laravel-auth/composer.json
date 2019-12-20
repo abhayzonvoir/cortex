@@ -1,0 +1,97 @@
+{
+    "name": "rinvex/laravel-auth",
+    "description": "Rinvex Auth is a powerful authentication, authorization and verification package built on top of Laravel. It provides developers with Role Based Access Control, TwoFactor Authentication, Social Authentication, compatible with Laravel’s standard API and fully featured all-in-one solution out of the box.",
+    "type": "library",
+    "keywords": [
+        "authentication",
+        "authorization",
+        "verification",
+        "activation",
+        "abilities",
+        "phone",
+        "sms",
+        "call",
+        "users",
+        "security",
+        "twofactor",
+        "laravel",
+        "rinvex",
+        "rbac",
+        "totp",
+        "acl",
+        "roles"
+    ],
+    "license": "MIT",
+    "homepage": "https://rinvex.com",
+    "support": {
+        "email": "help@rinvex.com",
+        "issues": "https://github.com/rinvex/laravel-auth/issues",
+        "source": "https://github.com/rinvex/laravel-auth",
+        "docs": "https://github.com/rinvex/laravel-auth/README.md"
+    },
+    "authors": [
+        {
+            "name": "Rinvex LLC",
+            "homepage": "https://rinvex.com",
+            "email": "help@rinvex.com"
+        },
+        {
+            "name": "Abdelrahman Omran",
+            "homepage": "https://omranic.com",
+            "email": "me@omranic.com",
+            "role": "Project Lead"
+        },
+        {
+            "name": "The Generous Laravel Community",
+            "homepage": "https://github.com/rinvex/laravel-auth/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.2.0",
+        "laravel-notification-channels/authy": "^6.0.0",
+        "laravel/helpers": "^1.1.0",
+        "laravel/framework": "^6.0.0",
+        "laravel/socialite": "^4.2.0",
+        "laravelcollective/html": "^6.0.0",
+        "pragmarx/google2fa": "^6.0.0",
+        "rinvex/laravel-cacheable": "^3.0.0",
+        "rinvex/countries": "^6.0.0",
+        "rinvex/languages": "^4.0.0",
+        "rinvex/laravel-support": "^3.0.0",
+        "watson/validating": "^3.3.0"
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.0",
+        "phpunit/phpunit": "^8.3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Rinvex\\Auth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rinvex\\Auth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rinvex\\Auth\\Providers\\AuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
