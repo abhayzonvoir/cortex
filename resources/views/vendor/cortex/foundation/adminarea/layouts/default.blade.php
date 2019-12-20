@@ -24,7 +24,7 @@
     @stack('vendor-scripts')
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
-<body class="hold-transition skin-blue fixed sidebar-mini">
+<body class="sidebar-mini js-focus-visible sidebar-collapse">
 
     {{-- Main content --}}
     <div id="app" class="wrapper">

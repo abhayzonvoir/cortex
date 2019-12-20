@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-12-16 11:01:09.
+    * Generated on 2019-12-19 10:26:08.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -243,6 +243,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -542,6 +543,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -841,6 +843,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -1140,6 +1143,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -1439,6 +1443,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -1738,6 +1743,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -2037,6 +2043,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
@@ -2336,6 +2343,7 @@ namespace PHPSTORM_META {
         'db.factory' => \Illuminate\Database\Connectors\ConnectionFactory::class,
         'desktop.notification' => \NunoMaduro\LaravelDesktopNotifier\Notification::class,
         'desktop.notifier' => \NunoMaduro\LaravelDesktopNotifier\Notifier::class,
+        'encrypter' => \Illuminate\Encryption\Encrypter::class,
         'events' => \Illuminate\Events\Dispatcher::class,
         'excel' => \Maatwebsite\Excel\Excel::class,
         'files' => \Illuminate\Filesystem\Filesystem::class,
