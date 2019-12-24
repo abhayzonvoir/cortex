@@ -26,7 +26,7 @@ import 'jquery-mousewheel';
 import 'jquery-slimscroll';
 
 // Bootstrap
-import 'bootstrap-sass';
+import 'bootstrap';
 import 'bootstrap-notify';
 
 // Pickers

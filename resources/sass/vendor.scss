@@ -1,6 +1,13 @@
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+//$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import '~bootstrap/scss/functions', '~bootstrap/scss/variables';
+@import "~bootstrap/scss/bootstrap";
+
+@import '~bootstrap/scss/_mixins.scss';
+
+
+
+
 @import '~bootstrap-daterangepicker/daterangepicker.css';
-@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 @import '~bootstrap-colorpicker/src/sass/_colorpicker.scss';
 @import '~bootstrap-popover-picker/dist/css/bootstrap-picker.css';
 @import '~fontawesome-iconpicker/dist/css/fontawesome-iconpicker.css';
@@ -10,3 +17,45 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import '~select2/dist/css/select2.css';
 @import '~dropzone/dist/dropzone.css';
 @import '~animate.css/animate.css';
+@import '~admin-lte/build/scss/_mixins.scss';
+@import '~admin-lte/build/scss/_bootstrap-variables.scss';
+@import '~admin-lte/build/scss/_variables.scss';
+@import '~admin-lte/build/scss/AdminLTE-components.scss';
+@import '~admin-lte/build/scss/AdminLTE-core.scss';
+@import '~admin-lte/build/scss/AdminLTE-extra-components.scss';
+@import '~admin-lte/build/scss/AdminLTE-pages.scss';
+@import '~admin-lte/build/scss/AdminLTE-plugins.scss';
+@import '~admin-lte/build/scss/AdminLTE-raw.scss';
+@import '~admin-lte/build/scss/AdminLTE-plugins.scss';
+
+@import '~admin-lte/build/scss/_main-sidebar.scss';
+@import '~admin-lte/build/scss/_alerts.scss';
+@import '~admin-lte/build/scss/_brand.scss';
+@import '~admin-lte/build/scss/_buttons.scss';
+@import '~admin-lte/build/scss/_callout.scss';
+@import '~admin-lte/build/scss/_cards.scss';
+@import '~admin-lte/build/scss/_carousel.scss';
+@import '~admin-lte/build/scss/_colors.scss';
+@import '~admin-lte/build/scss/_control-sidebar.scss';
+@import '~admin-lte/build/scss/_direct-chat.scss';
+@import '~admin-lte/build/scss/_dropdown.scss';
+@import '~admin-lte/build/scss/_elevation.scss';
+@import '~admin-lte/build/scss/_forms.scss';
+@import '~admin-lte/build/scss/_layout.scss';
+@import '~admin-lte/build/scss/_main-header.scss';
+@import '~admin-lte/build/scss/_miscellaneous.scss';
+@import '~admin-lte/build/scss/_modals.scss';
+@import '~admin-lte/build/scss/_navs.scss';
+@import '~admin-lte/build/scss/_print.scss';
+@import '~admin-lte/build/scss/_products.scss';
+@import '~admin-lte/build/scss/_progress-bars.scss';
+@import '~admin-lte/build/scss/_sidebar-mini.scss';
+@import '~admin-lte/build/scss/_small-box.scss';
+@import '~admin-lte/build/scss/_social-widgets.scss';
+@import '~admin-lte/build/scss/_table.scss';
+@import '~admin-lte/build/scss/_text.scss';
+@import '~admin-lte/build/scss/_timeline.scss';
+@import '~admin-lte/build/scss/_toasts.scss';
+@import '~admin-lte/build/scss/_users-list.scss';
+
+

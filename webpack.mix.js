@@ -88,7 +88,7 @@ mix
             'jquery-slimscroll',
 
             // Bootstrap
-            'bootstrap-sass',
+            'bootstrap',
             'bootstrap-notify',
 
             // Pickers
@@ -110,6 +110,9 @@ mix
 
             // Theme
             'admin-lte',
+            'admin-lte/plugins/chart.js/Chart.min.js',
+            'admin-lte/dist/js/demo.js',
+            'admin-lte/dist/js/pages/dashboard3.js'
         ],
         'public/js/vendor.js'
     )

@@ -283,7 +283,7 @@ final class Versions
   'theseer/tokenizer' => '1.1.3@11336f6f84e16a720dae9d8e6ed5019efa85a0f9',
   'webmozart/assert' => '1.6.0@573381c0a64f155a0d9a23f4b0c797194805b925',
   'wnx/laravel-stats' => 'v2.0.0@1b3c60bfbf81233973cbc2a63be4e6f83b2d6205',
-  'rinvex/cortex' => 'dev-master@9fea102b74fd0709cdfc0c64e61f8598011135e9',
+  'rinvex/cortex' => 'dev-master@b1359e11cf5ff9163d912ab3e440309d9877bd6b',
 );
 
     private function __construct()
