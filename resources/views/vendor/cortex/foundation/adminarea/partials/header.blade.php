@@ -1,20 +1,20 @@
-<header class="main-header fh-fixedHeader">
-    <a href="#" class="logo" data-toggle="push-menu" role="button">
-        <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><i class="fa fa-home"></i></span>
-        <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>{{ config('app.name') }}</b></span>
-    </a>
-    <nav class="navbar navbar-static-top">
-        <div class="navbar-custom-menu pull-left">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ route('adminarea.home') }}"><i class="fa fa-home"></i> {{ trans('cortex/foundation::common.home') }}</a></li>
-            </ul>
-        </div>
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
 
-        <div class="navbar-custom-menu">
-            {!! Menu::render('adminarea.header.language') !!}
-            {!! Menu::render('adminarea.header.user') !!}
-        </div>
-    </nav>
-</header>
+    <!-- Left navbar links -->
+    <ul class="navbar-nav sammmu">
+       <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+       </li>
+      <!--  <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+       </li> -->
+       <li class="nav-item d-none d-sm-inline-block"><a class="nav-link" href="{{ route('adminarea.home') }}"><i class="fa fa-home"></i> {{ trans('cortex/foundation::common.home') }}</a></li>
+       <!-- <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+       </li> -->
+    </ul>
+    <div class="navbar-custom-menu navbar-nav ml-auto ">
+    {!! Menu::render('adminarea.header.language') !!}
+    {!! Menu::render('adminarea.header.user') !!}
+    </div>  
+ </nav>
